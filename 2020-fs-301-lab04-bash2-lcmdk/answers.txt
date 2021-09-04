@@ -1,0 +1,25 @@
+Logan Choi
+
+1a) ./compiley.sh program.cpp hello
+1b) The script essentially takes two arguments.
+    The first one is the program, and the second
+    is the executable name. First, it uses calls a
+    function, then it runs a compiler command 
+    "g++ -o program executable".
+
+2a)You can't compile with "my program.cpp"
+2b)The output says that "my" is the first argument and
+   "program.cpp" is the second argument.g++ can't 
+   recognizae any files because there are no files
+   "my" or "program.cpp", thus it can't compile.
+
+3a)It does not work having single quotes.
+3b)When you call the function, it thinks it is taking 
+   '$@' literally. Thus, g++ can't recognize any files
+   because there aren't any.
+
+4a)The script does work now.
+4b)Double quotes allow the script to understand you 
+   want to use the arguments, and not $@ literally.
+   It knows you want to use the file and executable
+   name.

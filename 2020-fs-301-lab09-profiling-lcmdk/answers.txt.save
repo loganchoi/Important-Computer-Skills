@@ -1,0 +1,17 @@
+Logan Choi
+
+
+PROBLEM 1
+
+1. The two most called methods are:
+   a) Vector<int>::length() const 
+      Called 502500 times
+   b) Vector<int>::operator[](unsigned int)
+      Called 500500 times
+
+2. The copy constructor is called 1000 times.
+
+
+PROBLEM 2
+
+1. 

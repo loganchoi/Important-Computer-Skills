@@ -1,0 +1,23 @@
+COMPILE=g++
+DEBUG=-g -Wall -Wextra
+FLAG=-O2
+
+SOURCE=$(wildcard *.cpp)
+OBJECT=$(SOURCE:%.cpp=%.o)
+HEADERS=$(wildcard *.h)
+
+program: ${OBJECT}
+	${COMPILE} ${FLAG} ${OBJECT} -o program
+
+%.o: %.cpp ${HEADERS}
+	${COMPILE} ${FLAG} -c $<
+
+.PHONY: clean debug
+
+debug: FLAG=${DEBUG}
+
+debug: program
+
+clean:
+	-@rm -f program
+	-@rm -f ${OBJECT}

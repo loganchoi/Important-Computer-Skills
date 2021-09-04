@@ -1,0 +1,9 @@
+Answers: Logan Choi
+
+1.There is memory that is not being deallocated after use. nums_copy is being allocated in main(), but it isn't being freed once
+you are done with the program. It is a memory leak. All you have to do is
+just delete nums_copy.
+
+2. The problem is that you aren't copying the array correctly. You have to
+manually put in each element in the new array through a loop. If you don't,
+you are accessing memory that hasn't really been allocated. 

@@ -1,0 +1,24 @@
+Logan Choi
+
+Question 1:
+ls -al * showcases all the files in the directory with the date, time, and username. The * matches all files in the directory.
+ls -al .* showcases all the files in the directory and previous directory. The .* matches all the files from the current directory and the previous directory.
+rm -r .* and rm -rf / destroys all your files in the directory, and previous
+directory
+
+Question 2:
+You would type ls -t to list by file modification time.
+You would type cat -n to show line numbers when outputting a file.
+The Whatis command displays one-line manual page descriptions.
+
+Question 3:
+file.txt now contains apple.
+file.txt now contains banana. The > command just overwrites everything onto
+the text file.
+file.txt now contains banana and carrot. The >> command goes to the next line
+and writes the string. It does not overwrite the entire file.
+The output is 1      7      14. The | breaks the command, so it knows that
+you want to use the wc command. 
+
+
+

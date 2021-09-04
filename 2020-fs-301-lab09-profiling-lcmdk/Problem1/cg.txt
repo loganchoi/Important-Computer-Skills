@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.2366462' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 5653718
+Trigger: Program termination
+Profiled target:  ./a.out (PID 2366462, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir         
+--------------------------------------------------------------------------------
+36,204,360  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir          file:function
+--------------------------------------------------------------------------------
+11,511,500  ???:0x0000000000001770 [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+ 9,044,000  ???:0x0000000000001640 [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+ 8,035,000  ???:0x00000000000016e8 [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+ 4,020,000  ???:0x000000000000175a [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+   952,163  /build/glibc-ZN95T4/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   563,063  /build/glibc-ZN95T4/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   274,611  /build/glibc-ZN95T4/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+   118,193  /build/glibc-ZN95T4/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   108,664  /build/glibc-ZN95T4/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    95,000  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    90,455  /build/glibc-ZN95T4/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+    83,954  /build/glibc-ZN95T4/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    82,728  /build/glibc-ZN95T4/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    71,449  /build/glibc-ZN95T4/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    64,994  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    60,005  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    53,018  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    52,999  /build/glibc-ZN95T4/glibc-2.31/libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    52,000  ???:0x0000000000124e30 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    46,596  ???:0x0000000000001540 [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+    44,016  /build/glibc-ZN95T4/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    44,000  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    41,156  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    41,030  ???:0x0000000000001329 [/nethome/users/lcmdk/cs1585/2020-fs-301-lab09-profiling-lcmdk/Problem1/a.out]
+    38,000  ???:std::ostream::put(char) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    37,000  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    32,192  /build/glibc-ZN95T4/glibc-2.31/libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    31,872  /build/glibc-ZN95T4/glibc-2.31/stdlib/random_r.c:random_r [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    22,000  ???:0x0000000000124fb0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    21,189  /build/glibc-ZN95T4/glibc-2.31/malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    21,000  /build/glibc-ZN95T4/glibc-2.31/stdlib/random.c:random [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    20,000  ???:std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    19,114  /build/glibc-ZN95T4/glibc-2.31/libio/libioP.h:fflush
+    18,126  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    18,000  /build/glibc-ZN95T4/glibc-2.31/libio/libioP.h:fwrite
+    18,000  /build/glibc-ZN95T4/glibc-2.31/libio/putc.c:putc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-ZN95T4/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h
+  /build/glibc-ZN95T4/glibc-2.31/elf/dl-addr.c
+  /build/glibc-ZN95T4/glibc-2.31/elf/dl-lookup.c
+  /build/glibc-ZN95T4/glibc-2.31/elf/do-rel.h
+  /build/glibc-ZN95T4/glibc-2.31/libio/fileops.c
+  /build/glibc-ZN95T4/glibc-2.31/libio/iofflush.c
+  /build/glibc-ZN95T4/glibc-2.31/libio/iofwrite.c
+  /build/glibc-ZN95T4/glibc-2.31/libio/libioP.h
+  /build/glibc-ZN95T4/glibc-2.31/libio/putc.c
+  /build/glibc-ZN95T4/glibc-2.31/malloc/malloc.c
+  /build/glibc-ZN95T4/glibc-2.31/stdlib/random.c
+  /build/glibc-ZN95T4/glibc-2.31/stdlib/random_r.c
+  /build/glibc-ZN95T4/glibc-2.31/string/../sysdeps/x86_64/strcmp.S
+

@@ -1,0 +1,12 @@
+Q1: The print_vector function was causing the segfault. Specifically, line
+48. You were trying to access memory that wasn't allocated. 
+
+Q2: There was no break condition. The segfault was caused by that.
+You needed to have (i < print_this.size()), so it will break. It kept
+incrementing.
+
+Q3: The infinite loop was caused because the 'i' was not being incremented. 
+
+
+Q4: In the for-loop condition statment, you had "<=" instead of "<". This
+will add one index too much. 
